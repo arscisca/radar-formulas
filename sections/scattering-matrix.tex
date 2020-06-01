@@ -1,0 +1,46 @@
+\section{Scattering Matrix}
+$$ \vec{b} = S \vec{a} \
+	\endnote{Definition of the scattering matrix}
+	$$
+
+\subsection{Useful matrices}
+\begin{multicols}{2} \noindent
+	$$ S_\text{c, cw} = \begin{pmatrix}
+			0 & 0 & 1 \\
+			1 & 0 & 0 \\
+			0 & 1 & 0
+		\end{pmatrix} \
+		\endnote{Clockwise circulator}
+		$$
+	$$ S_\text{c, ccw} = \begin{pmatrix}
+			0 & 1 & 0 \\
+			0 & 0 & 1 \\
+			1 & 0 & 0
+		\end{pmatrix} \
+		\endnote{Counter-clockwise circulator}
+		$$
+	$$ S_\text{ins} = \begin{pmatrix}
+			0 & 0\\
+			1 & 0
+		\end{pmatrix} \
+		\endnote{Insulator}
+		$$
+	$$ S_{dc} = \begin{pmatrix}
+			0 				& \sqrt{1 - k^2} & k e^{j \theta} & 0 \\
+			\sqrt{1 - k^2} 	& 0 			 & 0 			  &  k e^{j \theta} \\
+			k e^{j \theta}  & 0 			 & 0 			  & \sqrt{1 - k^2} \\
+			0 				& k e^{j \theta} & \sqrt{1 - k^2} & 0
+		\end{pmatrix} \
+		\endnote{Directional coupler}
+		$$
+\end{multicols}
+
+\subsection{Other quantities}
+\begin{multicols}{2}
+	$$ C = 10 \log_{10}{\frac{P_1}{P_3}}
+		= 20 \log_{10}{\frac{1}{S_{3,1}}}
+		= -20 \log_{10}{|k|} \
+		\endnote{Coupling factor for a directional coupler}
+		$$
+\end{multicols}
+\printendnotes[itemize]
