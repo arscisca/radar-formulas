@@ -1,0 +1,38 @@
+\section{Generic Radar}
+\subsection{Geometry}
+\begin{multicols}{3} \noindent
+	$$ A_e = \frac{G \lambda^2}{4 \pi} = \rho A \
+		\endnote{Effective area of the antenna}
+		$$
+	$$ G = 4 \pi \frac{A_e}{\lambda^2} \
+		\endnote{Gain}
+		$$
+	$$ 	\sigma =
+			\frac{P_R \frac{4 \pi}{\Omega}}{\frac{P_c}{A_\text{target}}} =
+			G_\text{target} A_\text{target} \
+		\endnote{Radar Cross Section}
+		$$
+	$$ \sigma_\text{sphere} = \pi r^2 \
+		\endnote{RCS of a sphere; r is the radius}
+		$$
+	$$ \sigma_\text{plate} = \frac{4 \pi A^2}{\lambda^2} \
+		\endnote{RCS of a plate}
+		$$
+	$$ \sigma_\text{corner} = \frac{4 \pi A_\text{eff}^2}{\lambda^2} \
+		\endnote{RCS of a corner reflector}
+		$$
+\end{multicols}
+
+\subsection{Power}
+\begin{multicols}{3} \noindent
+	$$ P_D = \frac{P_t}{4 \pi R^2} G \
+		\endnote{Transmitted power density over the surface of a sphere with radius R}
+		$$
+	$$ P_r = \frac{P_t G^2 \lambda^2 \sigma}{(4 \pi)^3 R^4} \
+		\endnote{Radar equation}
+		$$
+	$$ \text{SNR} = \frac{P_t G^2 \lambda^2 \sigma}{(4 \pi)^3 k_B T_e B F L R^4} \
+		\endnote{Signal to Noise Ratio in the radar equation}
+		$$
+\end{multicols}
+\printendnotes[itemize]
