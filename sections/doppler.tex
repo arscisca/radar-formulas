@@ -1,10 +1,13 @@
 \section{Doppler}
 \begin{multicols}{3} \noindent
-	$$f_d = \frac{2 v_\text{target}}{c} \cos{\theta_e} \cos{\theta_a} \
-		\endnote{Doppler frequency. Normally the cosines are not needed.}
+	$$f_d = \frac{2 v_\text{target}}{\lambda} \cos{\theta_e} \cos{\theta_a} \
+		\endnote{Doppler frequency. Normally the cosines are not needed}
 		$$
-	$$\delta f_d = \frac{\text{PRF}}{N} \
+	$$\delta f_d = \frac{1}{NT} \
 		\endnote{Resolution of the doppler frequency}
+		$$
+	$$ f_r \ge 2 f_{d, \text{max}}
+		\endnote{PRF must follow the Nyquist rule to sample the Doppler frequency}
 		$$
 	$$ \gamma = 1 + \frac{2v_\text{target}}{c} \
 		\endnote{Time dilation}

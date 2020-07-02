@@ -28,11 +28,18 @@
 	$$ P_D = \frac{P_t}{4 \pi R^2} G \
 		\endnote{Transmitted power density over the surface of a sphere with radius R}
 		$$
-	$$ P_r = \frac{P_t G^2 \lambda^2 \sigma}{(4 \pi)^3 R^4} \
+	$$ P_r = P_t \frac{G^2 \lambda^2 \sigma}{(4 \pi)^3 R^4} \
 		\endnote{Radar equation}
 		$$
-	$$ \text{SNR} = \frac{P_t G^2 \lambda^2 \sigma}{(4 \pi)^3 k_B T_e B F L R^4} \
-		\endnote{Signal to Noise Ratio in the radar equation}
+	$$ P_r = P_t \frac{G_0^2 \lambda ^2 \sigma}{(4 \pi)^3 h^4} \
+		\endnote{Radar equation for $cosec^2$ pattern}
+		$$
+	$$ \text{SNR} = \frac{P_t G^2 \lambda^2 \sigma n_p}{(4 \pi)^3 R^4 \ k_B T_e B \ F \ L} \
+		\endnote{Signal to Noise Ratio in the radar equation. $n_p$ is the number of transmitted pulses}
+		$$
+	$$ \text{SNR}_s = \frac{P_\text{avg} G \lambda ^ 2 \sigma T_\text{scan}}
+		{(4 \pi)^2 R^4 \ k T_e \ F \ L \ \Omega} \
+		\endnote{Signal to Noise Ratio in a surveillance Radar}
 		$$
 \end{multicols}
 \printendnotes[itemize]
